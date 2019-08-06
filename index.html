@@ -1,0 +1,547 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>畅行网络-首页</title>
+        <meta name="keywords" content="" />
+        <meta name="author" content="Baidu.com" />
+        <meta name="description" content="" />
+        <link rel="stylesheet" type="text/css" href="css/page.css" />
+        <link rel="shortcut icon" href=" images/logo.ico">
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/tweenmax.min.js"></script>
+        <script type="text/javascript" src="js/page.js"></script>
+        <script src="js/common.js" type="text/javascript"></script>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    </head>
+    
+    <body>
+        <div class="header">
+            <div class="header_bar">
+                 <h1 class="logo"> <a href="index.html"><img src="picture/logo.png" title="首页" alt="首页"></a> </h1>
+
+                <ul id="social" class="social">
+                    <li class="slist"> <a class="sfocus" href="javascript:void(0);">官方微博</a>
+
+                        <div class="sqrcode_wrap">
+                            <a class="sqrcode" href="javascript:void(0);">
+                                <img src="picture/weibo185.png" title="扫一扫" alt="扫一扫" />
+                            </a> <a class="slink" href="javascript:void(0);">新浪微博</a> 
+                        </div>
+                    </li>
+                    <li class="slist"> <a class="sfocus" href="javascript:void(0);">官方微信</a>
+
+                        <div class="sqrcode_wrap">
+                            <a class="sqrcode" href="javascript:void(0);">
+                                <img src="picture/weixin185.png" title="扫一扫" alt="扫一扫" />
+                            </a> <a class="slink" href="javascript:void(0);">微信</a> 
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <input type="hidden" value="1" id="hidTypeId" />
+            <div id="menu" class="menu">
+                <ul class="mwrap">
+                    <li class="mli">
+                        <a href="/" class="mlink" id="topMenu1"> 
+                            <span class="mico mico_home">
+                                <span class="micoi"></span>
+                            </span> 
+                            <span class="mname">首页</span> 
+                        </a>
+                    </li>
+                    <li class="mli">
+                        <a href="abouts.html" class="mlink curr" id="topMenu2"> <span class="mico mico_about"><span class="micoi"></span></span> <span class="mname">关于</span> 
+                        </a>
+                    </li>
+                    <li class="mli">
+                        <a href="service.html" class="mlink" id="topMenu3"> <span class="mico mico_service"><span class="micoi"></span></span> <span class="mname">服务</span> 
+                        </a>
+                    </li>
+                    <li class="mli">
+                        <a href="anli.html" class="mlink" id="topMenu4"> <span class="mico mico_case"><span class="micoi"></span></span> <span class="mname">案例</span> 
+                        </a>
+                    </li>
+                    <li class="mli">
+                        <a href="news.html" class="mlink" id="topMenu5"> <span class="mico mico_news"><span class="micoi"></span></span> <span class="mname">动态</span> 
+                        </a>
+                    </li>
+                    <li class="mli">
+                        <a href="contents.html" class="mlink" id="topMenu6"> <span class="mico mico_contact"><span class="micoi"></span></span> <span class="mname">联系</span> 
+                        </a>
+                    </li>
+                </ul>
+                <div class="mshadow"></div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var typeid = document.getElementById("hidTypeId").value;
+
+            for (var i = 1; i <= 6; i++) {
+                if (i == typeid) {
+                    document.getElementById("topMenu" + i).className = "mlink curr";
+                } else {
+                    document.getElementById("topMenu" + i).className = "mlink";
+                }
+            }
+        </script>
+        <div class="header_bg"></div>
+        <div class="banner">
+            <div id="bannerQuery" class="bwrap">
+                <ul class="bquery">
+                    <li class="blist">
+                        <a href="/service/" target="_blank">
+                            <img src="picture/banner11.png" height="570" width="1920" title="banner01" alt="" />
+                        </a>
+                    </li>
+                    <li class="blist">
+                        <a href="/service/" target="_blank">
+                            <img src="picture/banner3.jpg" title="banner02" alt="" />
+                        </a>
+                    </li>
+                    <li class="blist">
+                        <a href="/service/" target="_blank">
+                            <img src="picture/banner7.png" title="banner03" alt="" />
+                        </a>
+                    </li>
+                    <li class="blist">
+                        <a href="/service/" target="_blank">
+                            <img src="picture/banner7.png" title="banner04" alt="" />
+                        </a>
+                    </li>
+                   <!--  <li class="blist">
+                        <a href="/service/" target="_blank">
+                            <img src="picture/2014714212359.jpg" title="banner04" alt="" />
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="bctrl">
+                <div id="bannerCtrl" class="bctrli"></div>
+            </div>
+        </div>
+        <div class="service">
+            <ul id="service" class="serQuery">
+                <li class="serLi">
+                    <div class="serWrap">
+                        <div class="serIco">
+                            <img src="picture/2014731350821.png" alt="" title="" />
+                        </div>
+                         <h4 class="serTitle">品牌网站建设</h4>
+
+                        <div class="serIntro">企业官网建设
+                            <br/>创意网站建设
+                            <br/>电子商务网站</div>
+                        <div class="serLink"> <a class="serBtn" href="/service/"><span class="serBtnLink">查看详情</span><span class="serBtnHover">查看详情</span></a> 
+                        </div>
+                    </div>
+                </li>
+                <li class="serLi">
+                    <div class="serWrap">
+                        <div class="serIco">
+                            <img src="picture/201473141318.png" alt="" title=""/>
+                        </div>
+                         <h4 class="serTitle">移动APP开发</h4>
+
+                        <div class="serIntro">iPhone应用开发
+                            <br/>Android应用开发
+                            <br/>平板应用设计开发</div>
+                        <div class="serLink"> <a class="serBtn" href="/service/"><span class="serBtnLink">查看详情</span><span class="serBtnHover">查看详情</span></a> 
+                        </div>
+                    </div>
+                </li>
+                <li class="serLi">
+                    <div class="serWrap">
+                        <div class="serIco">
+                            <img src="picture/2014731422684.png" alt="" />
+                        </div>
+                         <h4 class="serTitle">手机/微网站建设</h4>
+
+                        <div class="serIntro">微信网站
+                            <br/>响应式网站
+                            <br/>WAP网站</div>
+                        <div class="serLink"> <a class="serBtn" href="/service/"><span class="serBtnLink">查看详情</span><span class="serBtnHover">查看详情</span></a> 
+                        </div>
+                    </div>
+                </li>
+                <li class="serLi">
+                    <div class="serWrap">
+                        <div class="serIco">
+                            <img src="picture/2014731438471.png" alt="" title="" />
+                        </div>
+                         <h4 class="serTitle">网站运营维护</h4>
+
+                        <div class="serIntro">网站改版及修改
+                            <br/>域名注册
+                            <br/>空间服务器租用</div>
+                        <div class="serLink"> <a class="serBtn" href="/service/"><span class="serBtnLink">查看详情</span><span class="serBtnHover">查看详情</span></a> 
+                        </div>
+                    </div>
+                </li>
+                <!-- <li class="serLi">
+                    <div class="serWrap">
+                        <div class="serIco">
+                            <img src="picture/201473152141.png" alt="" title="" />
+                        </div>
+                         <h4 class="serTitle">软件开发</h4>
+
+                        <div class="serIntro">企业OA系统
+                            <br/>CRM客户管理
+                            <br/>ERP系统</div>
+                        <div class="serLink"> <a class="serBtn" href="/service/"><span class="serBtnLink">查看详情</span><span class="serBtnHover">查看详情</span></a> 
+                        </div>
+                    </div>
+                </li> -->
+                <li class="serLi">
+                    <div class="serWrap">
+                        <div class="serIco">
+                            <img src="picture/201473157284.png" alt="" title="" />
+                        </div>
+                         <h4 class="serTitle">网站优化推广</h4>
+
+                        <div class="serIntro">微信营销推广
+                            <br/>SEO优化
+                            <br/>产品推广</div>
+                        <div class="serLink"> <a class="serBtn" href="/service/"><span class="serBtnLink">查看详情</span><span class="serBtnHover">查看详情</span></a> 
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="introShow">
+            <div class="icaseWrap">
+                <div class="icaseHeader"> <a class="icaseDetLink" href="/anli/">MORE</a>
+
+                    <div class="icaseName">项目案例</div>
+                </div>
+                <div id="caseSwitch" class="icaseBody">
+                    <dl class="icaseLeft"> <dt class="icaseLeftTitle">案例推荐</dt>
+
+                        <dd class="icaseLeftIntro">
+                            <a class="icasebPrev" href="javascript:void(0);" title="上一张"></a>
+                            <a class="icasebNext" href="javascript:void(0);" title="下一张"></a>
+                            <ul class="icaseBanner">
+                                <li class="icasebli">
+                                    <a class="icasePic" href="/anli/web/6.html" target="_blank">
+                                        <img src="picture/1-14092h214420-l.jpg" alt="" width="402" height="259" title="" />
+                                    </a>
+                                    <div class="icaseInfo">
+                                         <h4 class="icaseTitle">北京市天润中电高压电子有</h4>
+ <span class="icaseDate">2019-08-02</span> 
+                                    </div>
+                                    <div class="icaseIntro">单相高压桥主要用于整流电路， 分为低频、快恢复、高频、超高频、 特高频、极高频、最高频...</div>
+                                </li>
+                                <li class="icasebli">
+                                    <a class="icasePic" href="/anli/web/4.html" target="_blank">
+                                        <img src="picture/1-14092h211390-l.jpg" alt="青海高原圣肽生物科技有限" width="402" height="259" title="" />
+                                    </a>
+                                    <div class="icaseInfo">
+                                         <h4 class="icaseTitle">青海高原圣肽生物科技有限</h4>
+ <span class="icaseDate">2019-08-02</span> 
+                                    </div>
+                                    <div class="icaseIntro">青海高原圣肽生物科技有限公司，营销总部设在北京，解放军总后勤部。高原绿色生物肽是我...</div>
+                                </li>
+                                <li class="icasebli">
+                                    <a class="icasePic" href="/anli/web/1.html" target="_blank">
+                                        <img src="picture/1-1409241055320-l.jpg" alt="美容" width="402" height="259" title="美容" />
+                                    </a>
+                                    <div class="icaseInfo">
+                                         <h4 class="icaseTitle">美容</h4>
+ <span class="icaseDate">2019-08-02</span> 
+                                    </div>
+                                    <div class="icaseIntro">...</div>
+                                </li>
+                                <li class="icasebli">
+                                    <a class="icasePic" href="/plus/view.php?aid=2" target="_blank">
+                                        <img src="picture/1-1409241111160-l.jpg" alt="事业控股有限公司" width="402" height="259" title="" />
+                                    </a>
+                                    <div class="icaseInfo">
+                                         <h4 class="icaseTitle">事业控股有限公司</h4>
+ <span class="icaseDate">2019-08-02</span> 
+                                    </div>
+                                    <div class="icaseIntro">实业投资控股有限公司管理的一支稳健收益型基金，基金管理人拥...</div>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <ul id="icaseRight" class="icaseRight">
+                        <li class="icaserQuery"> <a class="icaserTitle" href="/anli/web/7.html" target="_blank">北京欧力普灯光设计工程顾</a>  <span class="icaserDate">2019-08-02</span>
+
+                            <div class="icaserPic">
+                                <img src="picture/1-14092h216250-l.jpg" width="284" height="180" title="" alt="北京欧力普灯光设计工程顾" /> <span class="icaserMask"></span> 
+                                <a class="icaserLink" href="/anli/web/7.html" title="查看详情"></a>
+                            </div>
+                        </li>
+                        <li class="icaserQuery"> <a class="icaserTitle" href="/anli/web/6.html" target="_blank">北京市天润中电高压电子有</a>  <span class="icaserDate">2019-08-02</span>
+
+                            <div class="icaserPic">
+                                <img src="picture/1-14092h214420-l.jpg" width="284" height="180" title="北京市天润中电高压电子有" alt="北京市天润中电高压电子有" /> <span class="icaserMask"></span> 
+                                <a class="icaserLink" href="/anli/web/6.html" title="查看详情"></a>
+                            </div>
+                        </li>
+                        <li class="icaserQuery"> <a class="icaserTitle" href="/anli/web/5.html" target="_blank">百慧联创（北京）事业控股</a>  <span class="icaserDate">2019-08-02</span>
+
+                            <div class="icaserPic">
+                                <img src="picture/1-14092h212590-l.jpg" width="284" height="180" title="" alt="百慧联创（北京）事业控股" /> <span class="icaserMask"></span> 
+                                <a class="icaserLink" href="/anli/web/5.html" title="查看详情"></a>
+                            </div>
+                        </li>
+                        <li class="icaserQuery"> <a class="icaserTitle" href="/anli/web/4.html" target="_blank">青海高原圣肽生物科技有限</a>  <span class="icaserDate">2019-08-02</span>
+
+                            <div class="icaserPic">
+                                <img src="picture/1-14092h211390-l.jpg" width="284" height="180" title="" alt="青海高原圣肽生物科技有限" /> <span class="icaserMask"></span> 
+                                <a class="icaserLink" href="/anli/web/4.html" title="查看详情"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="iaAndn">
+                <div id="iabout" class="iabout">
+                    <div class="iaHeader">
+                        <a class="iaPrev" href="javascript:void(0);" title="上一个"></a>
+                        <a class="iaNext" href="javascript:void(0);" title="下一个"></a>
+                    </div>
+                    <ul class="iaQuery">
+                        <li class="iaList">
+                            <div class="iaName"><span class="iaNameEn">ABOUT US</span><span class="iaNameCn">moumou概况</span>
+                            </div>
+                            <div class="iaBody">
+                                <div class="iaPic">
+                                    <a href="/abouts/">
+                                        <img src="picture/2014742239291.png" />
+                                    </a> <span class="iaPicMask"></span>  <span class="iaPicName">moumou简介</span> 
+                                </div>
+                                <div class="iaIntro">
+                                     <h4 class="iaTitle">我的网站科技 —— 简介</h4>
+
+                                    <div class="iaContent">专门致力于企业网站建设、高端品牌形象设计、交互设计、视觉设计于一体的专业用户体验的互联网服务。互联网是当今不可或缺的沟通方式，越来越多的人通过网络搜寻...</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="iaList">
+                            <div class="iaName"><span class="iaNameEn">ABOUT US</span><span class="iaNameCn">moumou概况</span>
+                            </div>
+                            <div class="iaBody">
+                                <div class="iaPic">
+                                    <a href="/abouts/">
+                                        <img src="picture/2014742240916.jpg" />
+                                    </a> <span class="iaPicMask"></span>  <span class="iaPicName">moumou理念</span> 
+                                </div>
+                                <div class="iaIntro">
+                                     <h4 class="iaTitle">我的网站科技 —— 理念</h4>
+
+                                    <div class="iaContent">我的网站科技以良好的商业信誉，完善的服务及深厚的技术力量，以客户服务为中心，专业为客户量身打造客户喜欢的网站平台。客户满意度是我们永恒的追求。我们通过敏锐...</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="iaList">
+                            <div class="iaName"><span class="iaNameEn">ABOUT US</span><span class="iaNameCn">我的网站概况</span>
+                            </div>
+                            <div class="iaBody">
+                                <div class="iaPic">
+                                    <a href="/abouts/">
+                                        <img src="picture/2014741452992.jpg" />
+                                    </a> <span class="iaPicMask"></span>  <span class="iaPicName">moumou文化</span> 
+                                </div>
+                                <div class="iaIntro">
+                                     <h4 class="iaTitle">我的网站科技 —— 文化</h4>
+
+                                    <div class="iaContent">专门致力于企业网站建设、高端品牌形象设计、交互设计、视觉设计于一体的专业用户体验的互联网服务。互联网是当今不可或缺的沟通方式，越来越多的人通过网络搜寻...</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="iaCtrl"></div>
+                </div>
+                <div id="iNews" class="iNews">
+                    <div class="inHeader"> <a class="inMore" href="/news/">更多</a> 
+                        <a class="inNext" href="javascript:void(0);" title="下一页"></a>
+                        <a class="inPrev" href="javascript:void(0);" title="上一页"></a> <span class="inNameEn">NEWS</span>  <span class="inNameCn">moumou动态</span> 
+                    </div>
+                    <div class="inQueryWrap">
+                        <ul class="inQuery">
+                            <li class="inList">
+                                <div class="inLableDate"><span class="indDay">27</span><span class="indMonth">Sep.</span>
+                                </div> <span class="inDate">2019年08月02日</span>  <a href="/news/hor/9.html" target="_blank" class="inTitle" title="">影响百度网页快照优化排名</a>
+
+                                <div class="inIntro">百度已成长成为具有垄断优势的全球性搜索引擎。简单的结论是，如果你的网站在百度上不能</div>
+                            </li>
+                            <li class="inList">
+                                <div class="inLableDate"><span class="indDay">27</span><span class="indMonth">Sep.</span>
+                                </div> <span class="inDate">2019年08月02日</span>  <a href="/news/hor/8.html" target="_blank" class="inTitle" title="">网站优化和排名-百度算法</a>
+
+                                <div class="inIntro">随着百度绿萝算法及石榴算法的相继发布，包括一诺互联在内 的网站受到了很多冲击，也给很</div>
+                            </li>
+                            <li class="inList">
+                                <div class="inLableDate"><span class="indDay">24</span><span class="indMonth">Sep.</span>
+                                </div> <span class="inDate">2019年08月02日</span>  <a href="/news/comp/3.html" target="_blank" class="inTitle" title="">怎样做好有价值的网站？</a>
+
+                                <div class="inIntro">在此，根据多年来的市场调查与实践，总结出做好网站需要注意以下几点内容： 　　首先，我</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="picLink">
+            <ul id="plQuery" class="plQuery">
+                <li class="plList">
+                    <a href="http://www.Baidu.com/" target="_blank">
+                        <img class="plGrey" src="picture/20190801.jpg">
+                        <img class="plColor" src="picture/201908011.jpg" title="合作伙伴" alt="合作伙伴">
+                    </a>
+                </li>
+                <li class="plList">
+                    <a href="http://www.Baidu.com/" target="_blank">
+                        <img class="plGrey" src="picture/20190802.jpg">
+                        <img class="plColor" src="picture/201908022.jpg" title="合作伙伴" alt="合作伙伴">
+                    </a>
+                </li>
+                <li class="plList">
+                    <a href="http://www.Baidu.com/" target="_blank">
+                        <img class="plGrey" src="picture/2014751837342.jpg">
+                        <img class="plColor" src="picture/2014751837346.jpg" title="合作伙伴" alt="合作伙伴">
+                    </a>
+                </li>
+                <li class="plList">
+                    <a href="http://www.Baidu.com/" target="_blank">
+                        <img class="plGrey" src="picture/2014751837895.jpg">
+                        <img class="plColor" src="picture/2014751837899.jpg" title="合作伙伴" alt="合作伙伴">
+                    </a>
+                </li>
+                <li class="plList">
+                    <a href="http://www.Baidu.com/" target="_blank">
+                        <img class="plGrey" src="picture/2014751837147.jpg">
+                        <img class="plColor" src="picture/2014751837151.jpg" title="合作伙伴" alt="合作伙伴">
+                    </a>
+                </li>
+                <li class="plList">
+                    <a href="http://www.Baidu.com/" target="_blank">
+                        <img class="plGrey" src="picture/2014751839650.jpg">
+                        <img class="plColor" src="picture/2014751839654.jpg" title="合作伙伴" alt="合作伙伴">
+                    </a>
+                </li>
+                <li class="plList">
+                    <a href="http://www.Baidu.com/" target="_blank">
+                        <img class="plGrey" src="picture/2014751839784.jpg">
+                        <img class="plColor" src="picture/2014751839787.jpg" title="合作伙伴" alt="合作伙伴">
+                    </a>
+                </li>
+                <li class="plList">
+                    <a href="http://www.Baidu.com/" target="_blank">
+                        <img class="plGrey" src="picture/2014751839288.jpg">
+                        <img class="plColor" src="picture/2014751839292.jpg" title="合作伙伴" alt="合作伙伴">
+                    </a>
+                </li>
+                <li class="plList">
+                    <a href="http://www.Baidu.com/" target="_blank">
+                        <img class="plGrey" src="picture/2014751839516.jpg">
+                        <img class="plColor" src="picture/2014751839520.jpg" title="合作伙伴" alt="合作伙伴">
+                    </a>
+                </li>
+                <li class="plList">
+                    <a href="http://www.Baidu.com/" target="_blank">
+                        <img class="plGrey" src="picture/2014751840397.jpg">
+                        <img class="plColor" src="picture/2014751840401.jpg" title="合作伙伴" alt="合作伙伴">
+                    </a>
+                </li>
+                <li class="plList">
+                    <a href="http://www.Baidu.com/" target="_blank">
+                        <img class="plGrey" src="picture/2014751839516.jpg">
+                        <img class="plColor" src="picture/2014751839520.jpg" title="合作伙伴" alt="合作伙伴">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="webSite">
+            <ul class="wsLink">
+                <li class="wslList">  <span class="wslName">关于我们</span>
+
+                    <ul class="wslcQuery">
+                        <li> <a href="/abouts/">公司概况</a>
+                        </li>
+                        <li> <a href="/abouts/">我的网站概况</a>
+                        </li>
+                        <li> <a href="/abouts/">我们的优势</a>
+                        </li>
+                        <li> <a href="/abouts/">企业文化</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="wslList">  <span class="wslName">服务项目</span>
+
+                    <ul class="wslcQuery">
+                        <li> <a href="/service/">品牌网站建设</a>
+                        </li>
+                        <li> <a href="/service/">移动APP开发</a>
+                        </li>
+                        <li> <a href="/service/">手机/微网站建设</a>
+                        </li>
+                        <li> <a href="/service/">软件开发</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="wslList">  <span class="wslName">新闻动态</span>
+
+                    <ul class="wslcQuery">
+                        <li> <a href="/news/comp/">公司动态</a>
+                        </li>
+                        <li> <a href="/news/hor/">行业资讯</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="wslList">  <span class="wslName">联系我们</span>
+
+                    <ul class="wslcQuery">
+                        <li> <a href="/contents/">联系方式</a>
+                        </li>
+                        <li> <a href="/contents/">需求提交</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="wsContact">
+                <li><span class="wscKey">网站建设咨询：</span><span class="wscVal">(qq)2284692254</span>
+                </li>
+                <li><span class="wscKey">投诉电话：</span><span class="wscVal">0312-5956936</span>
+                </li>
+            </ul>
+        </div>
+        <div class="textLink">
+            <div class="tlHeader">友情链接 <span class="tlNameEn">/ LINK</span>
+            </div>
+            <ul class="linkQuery">
+                <li><a href='http://www.bdgp-led.com/' target='_blank'>保定市光谱电子科技有限公司</a> 
+                </li>
+                <li><a href='http://hb-xdl.com/' target='_blank'>河北鑫动力新能源科技有限公司</a> 
+                </li>
+                <li><a href='https://www.11467.com/qiye/33601816.htm' target='_blank'>保定市源谱金属制品制造有限公司</a> 
+                </li>
+                <li><a href='http://www.bdgp-led.com/' target='_blank'>保定市畅行网络技术有限公司</a> 
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <div class="footerWrap">
+                <div class="footLeft">
+                    <br/>Copyright © 2012-2019.    保定市畅行网络技术有限公司  版权所有
+                    <div class="footRight">
+                        <a href="http://www.miitbeian.gov.cn" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+            <div id="backTop" class="backTop">  <a class="btqrShow" style="background-image:none;text-align:center;color:#fff;font-size:18px;line-height:66px;text-decoration:none;" href="tencent://message/?uin=2284692254">客服</a>
+
+                <div id="btqrImg" class="btqrImg">
+                    <img src="picture/qq172.png" alt="返回顶部" title="返回顶部">
+                </div>
+                <a id="btqrShow" class="btqrShow" href="javascript:void(0);"></a>
+                <a id="btBtn" class="btBtn" href="javascript:void(0);"></a>
+            </div>
+           <!--  <div id="onlinebox" style="width:100px; position:fixed; z-index:1000; top: 0px; right: 0px;"><a href="http://www.Baidu.com/" target="_blank" style="display: block;background: #e80f32;font-size: 16px;font-weight: bold;text-align: center;color: #fff; line-height:40px; text-decoration:none">织梦模板</a>
+            </div> -->
+    </body>
+    <script src="js/online.js" type="text/javascript"></script>
+
+</html>
